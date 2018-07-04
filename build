@@ -1,0 +1,4 @@
+#!/bin/bash
+clear; clear
+g++-8 main.c -framework OpenGL -framework Cocoa -lglut -o run
+

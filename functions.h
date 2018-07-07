@@ -72,7 +72,22 @@ int randomint(int lower, int upper){
 }
 
 
-
+void circle(float xc, float yc, float radius, int width, int height){
+ double tau = 6.2831;
+ double x;
+ double y;
+ glBegin(GL_POLYGON);
+    for(double theta = 0; theta < tau; theta +=0.0001){
+ 	x = cos(theta) * radius;
+ 	y = sin(theta) * radius;
+ 	x+= xc;
+ 	y+= yc;
+ 	x = getCoord(x, width);
+ 	y = getCoord(y, height);
+ 	glVertex2f(x, y);
+ }
+ glEnd();
+}
 
 
 int distance(int x0, int y0, int x1, int y1){

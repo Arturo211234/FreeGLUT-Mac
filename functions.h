@@ -25,6 +25,16 @@ void background(int red, int green, int blue, int alpha=255){
 	glClear(GL_COLOR_BUFFER_BIT);
 }
 
+float map(float n, min1, max1, min2, max2){
+  float bruh = n - min1;
+  float r1 = max1 - min1;
+  bruh = bruh / r1;
+  float r2 = max2 - min2;
+  bruh = bruh * r2;
+  bruh = min2 + bruh;
+  return bruh;
+}
+
 int sgn(float val){
 	if(val > 0){
 		return 1;

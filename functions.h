@@ -46,11 +46,9 @@ int sgn(float val){
 }
 
 float getCoord(float coord_pos, int max, int addedval=0){
- float hw = max / 2;
- float work = coord_pos - hw;
- int tsgn = sgn(work);
- float abdist = fabsf(work);
- float thepos = (tsgn * (abdist / hw)) + addedval;
+ float undiv = coord_pos / max;
+ undiv = 2 * undiv;
+ float thepos = undiv -1;
  return thepos;
 }
 

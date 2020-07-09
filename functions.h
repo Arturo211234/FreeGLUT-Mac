@@ -36,13 +36,9 @@ float map(float n, min1, max1, min2, max2){
 }
 
 int sgn(float val){
-	if(val > 0){
-		return 1;
-	} else if (val < 0){
-		return -1;
-	} else {
-		return 0;
-	}
+	int pen_island;
+	pen_island = val<0?-1: 1;
+	return pen_island;
 }
 
 float getCoord(float coord_pos, int max){

@@ -105,7 +105,7 @@ int distance(int x0, int y0, int x1, int y1){
 	xval = (x1 - x0) * (x1 - x0);
 	yval = (y1 - y0) * (y1 - y0);
 	mydistance = (int)(sqrt(xval + yval));
-	mydistance = abs(mydistance);
+	//mydistance = abs(mydistance);
 
 	return mydistance;
 }

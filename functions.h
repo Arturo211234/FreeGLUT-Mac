@@ -5,13 +5,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
+#define MAGI 0.003921568627f
 
 
 void background(int red, int green, int blue, int alpha=255){
-	float r = red * 0.003921568627;
-	float g = green * 0.003921568627;
-	float b = blue * 0.003921568627;
-	float a = alpha * 0.003921568627;
+	float r = red * MAGI;
+	float g = green * MAGI;
+	float b = blue * MAGI;
+	float a = alpha * MAGI;
 	if (r > 1){
 	 r = 1;
 	} else if (g > 1){

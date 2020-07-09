@@ -23,6 +23,9 @@ void running(){
 
 
 
+//------------------------------------------------------------
+// IGNORE EVERYTHING BELOW THIS LINE, EXCEPT FOR "TITLE"
+
 int32_t main(int argc, char** argv){
  time_t seconds;
  seconds = time(NULL);
@@ -32,7 +35,7 @@ int32_t main(int argc, char** argv){
  glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
  glutInitWindowPosition(100,100);
  glutInitWindowSize(width, height);
- glutCreateWindow("Calculating Pi - Arturo R. Contreras");
+ glutCreateWindow("TITLE");
  glutDisplayFunc(running);
  glutIdleFunc(running);
  glutMainLoop();

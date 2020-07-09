@@ -45,7 +45,7 @@ int sgn(float val){
 	}
 }
 
-float getCoord(float coord_pos, int max, int addedval=0){
+float getCoord(float coord_pos, int max){
  float undiv = coord_pos / max;
  undiv = 2 * undiv;
  float thepos = undiv -1;

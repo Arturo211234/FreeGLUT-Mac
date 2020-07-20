@@ -36,7 +36,7 @@ float map(float n, min1, max1, min2, max2){
   return bruh;
 }
 
-int sgn(float val){
+int sgn(int val){
     return (val > 0) - (val < 0);
 }
 
